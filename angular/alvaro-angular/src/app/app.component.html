@@ -1,0 +1,16 @@
+<!-- Muestra el título de la aplicación, se espera que 'title' sea una variable definida en el componente correspondiente -->
+<h1>{{title}}</h1>
+
+<!-- Define un elemento de navegación -->
+<nav>
+  <!-- Enlace al dashboard que utiliza la directiva 'routerLink' para la navegación interna -->
+  <a routerLink="/dashboard">Dashboard</a>
+  <!-- Enlace a la página de héroes que utiliza la directiva 'routerLink' para la navegación interna -->
+  <a routerLink="/heroes">Heroes</a>
+</nav>
+
+<!-- Marcador de posición donde se renderizarán dinámicamente los componentes asociados a las rutas definidas -->
+<router-outlet></router-outlet>
+
+<!-- Componente personalizado 'app-messages' que probablemente muestra mensajes específicos de la aplicación -->
+<app-messages></app-messages>
